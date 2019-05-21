@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+  resources :pianos, only: [:new, :index, :show, :edit, :destroy]
+
   root to: 'pages#home'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  post 'pianos', to: 'pianos#create'
+  patch 'pianos/:id', to: 'pianos#update'
+
 end
