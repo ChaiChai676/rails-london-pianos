@@ -1,6 +1,9 @@
-<h1>Home</h1>
-
-<ul>
-
-<p><%= link_to "Pianos", pianos_url %></p>
-</ul>
+<div class="home_container">
+  <div class="home_title">
+    <h1 class="title">Pianos in London</h1>
+    <a href="pianos" class="home_btn">Discover Pianos</a>
+  </div>
+  <div class="home_img">
+    <%= cl_image_tag "Piano_background", :id => "landing_photo" %>
+  </div>
+</div>

@@ -7,13 +7,22 @@ class PianosController < ApplicationController
     @markers = @pianos.map do |piano|
       {
         lat: piano.latitude,
-        lng: piano.longitude
+        lng: piano.longitude,
+        infoWindow: render_to_string(partial: "infowindow", locals: { piano: piano })
       }
     end
   end
 
   def show
     @piano = Piano.find(params[:id])
+    @markers1 = [@piano]
+    @markers = @markers1.map do |piano|
+      {
+        lng: piano.longitude,
+        lat: piano.latitude,
+        infoWindow: render_to_string(partial: "showinfowindow", locals: { piano: piano })
+      }
+    end
   end
 
   def new
