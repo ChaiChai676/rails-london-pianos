@@ -15,8 +15,8 @@ class PianosController < ApplicationController
 
   def show
     @piano = Piano.find(params[:id])
-    @markers1 = [@piano]
-    @markers = @markers1.map do |piano|
+    @piano_marker = [@piano]
+    @markers = @piano_marker.map do |piano|
       {
         lng: piano.longitude,
         lat: piano.latitude,

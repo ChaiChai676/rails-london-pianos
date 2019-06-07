@@ -33,8 +33,8 @@
 
 .content {
   position: absolute;
-  top: 8vh;
-  width: 60%;
+  top: 58vh;
+  width: 100%;
   z-index: -1;
 }
 
@@ -53,10 +53,12 @@
 .index_map {
   right: 0px;
   top: 8vh;
-  width: 40%;
-  height: 92vh;
+  width: 100%;
+  height: 50vh;
   position: fixed;
-  z-index: -1;
+  z-index: 1;
+  padding: 10px;
+  background-color: black;
 }
 
 .row {

@@ -1,11 +1,10 @@
 .show_map {
   position: absolute;
-  right: 0px;
-  width: 40%;
-  height: 100vh;
+  top: 0vh;
+  width: 100%;
 }
 
 .show_content {
   position: absolute;
-  width: 60%;
+  bottom: 0vh;
 }
