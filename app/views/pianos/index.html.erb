@@ -13,7 +13,7 @@
   <h1>Pianos</h1>
     <div class="row piano_list">
       <% @pianos.each do |piano| %>
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 card">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 card">
           <%= cl_image_tag "Placeholder", :id => "piano" %>
           <div class="info">
             <%= link_to piano.address, piano_path(piano) %>
